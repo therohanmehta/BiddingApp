@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { auth } from "../app/config/firebase";
+import { auth } from "../config/firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
-export default function Home() {
+export default function Login() {
   const [userData, setUserData] = useState({ email: "", password: "" });
 
   const loginAttempt = () => {
